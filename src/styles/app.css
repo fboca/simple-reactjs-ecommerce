@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Readex+Pro&display=swap');
+body,html {
+    margin: 0px;
+    font-family: Readex Pro;
+}
+.uk-navbar-nav .uk-brand {
+    font-family: Readex Pro;
+    color: rgba(0, 87, 0, 0.349);
+}
+.uk-navbar-nav .nav-link-h {
+    font-family: Readex Pro;
+    color: rgba(0, 0, 0, 0.596);
+}
+.uk-navbar-nav .nav-link-h:hover {
+    font-family: Readex Pro;
+    color: rgba(0, 92, 0, 0.596);
+}
