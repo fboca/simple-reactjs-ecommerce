@@ -1,4 +1,6 @@
 import React from "react";
+import { getFirestore } from "firebase/firestore"
+
 
 class Home extends React.Component {
     state = {
@@ -6,13 +8,14 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-
+        var db = getFirestore();
     }
 
     render() {
         return (
             <div>
-                </div>
+                <p>Home</p>
+            </div>
         )
     }
 }
