@@ -21,15 +21,25 @@ class Catalog extends React.Component {
         })
     }
 
+    addToCart(title) {
+        var local = localStorage.getItem('cart');
+        if(local!=null&&local!=undefined) {
+            //console.log(localStorage.getItem('cart'))
+            local = local.push(title);
+        }
+        local = [title];
+        localStorage.setItem('cart', JSON.stringify(local));
+    }
+
     render() {
         console.log(this.state)
         return (
             <div className="uk-container" style={{ marginTop: 20 }}>
                 <h3>All products</h3>
-                <div class="uk-child-width-1-4@m" uk-grid>
+                <div class="uk-child-width-1-4@m grid-container" uk-grid>
                     {this.state.products.map((product) => (
                         <div>
-                            <div class="uk-card uk-card-default">
+                            <div class="uk-card uk-card-default grid-card">
                                 <div class="uk-card-media-top">
                                     <img src={product.images[1]} alt="" />
                                 </div>
@@ -37,6 +47,7 @@ class Catalog extends React.Component {
                                     <h3 class="uk-card-title">{product.title}</h3>
                                     <p>{product.description}</p>
                                 </div>
+                                <button onClick={() => this.addToCart(product.title)} className="button-cart">Add to cart</button>
                             </div>
                         </div>
                     ))}

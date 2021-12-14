@@ -15,3 +15,30 @@ body,html {
     font-family: Readex Pro;
     color: rgba(0, 92, 0, 0.596);
 }
+.button-cart {
+    padding: 10px;
+    margin: 20px;
+    background-color: aliceblue;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0px !important;
+    transition: 500ms;
+}
+.button-cart:hover {
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(172, 252, 255);
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0px !important;
+}
+.grid-container {
+    display: flex;
+    flex-direction: row;
+}
+.grid-card {
+    flex: 1;
+    margin-left: 20px;
+}
