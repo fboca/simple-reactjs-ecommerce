@@ -12,7 +12,7 @@ body,html {
     color: rgba(0, 0, 0, 0.596);
 }
 .uk-navbar-nav .nav-link-h:hover {
-    font-family: Readex Pro;
+    font-family: Readex Pro; 
     color: rgba(0, 92, 0, 0.596);
 }
 .button-cart {
@@ -41,4 +41,8 @@ body,html {
 .grid-card {
     flex: 1;
     margin-left: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.11);
+    color: white;
 }
